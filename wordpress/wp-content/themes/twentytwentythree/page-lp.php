@@ -34,6 +34,9 @@ $permalink = get_the_permalink($post->ID);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <?php wp_head() ?>
+
     <title><?= $page_title ?> | LogicSource</title>
     <link rel="icon" href="https://logicsource.com/wp-content/themes/logicsource/favicon.ico">
     <link rel="stylesheet" href="https://logicsource.com/wp-content/themes/LogicSourceChild/library/css/fonts.css">
@@ -393,7 +396,7 @@ $permalink = get_the_permalink($post->ID);
         }
     </style>
 
-    
+
 </head>
 
 <body>
@@ -545,6 +548,7 @@ $permalink = get_the_permalink($post->ID);
         © 2023 LOGICSOURCE®, INC. | <a href="https://logicsource.com/legal/" target="_blank">LEGAL</a> | <a href="https://logicsource.com/privacy-policy/" target="_blank">PRIVACY POLICY</a>
     </footer>
 
+    <?php wp_footer() ?>
 </body>
 
 </html>
